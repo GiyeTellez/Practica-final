@@ -1,1 +1,167 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+/* Secciones */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+#inicio {
+  background: url('background.jpg') no-repeat fixed center center;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#inicio h2 {
+  font-size: 2.5em;
+}
+
+/* Galería */
+.galeria-img {
+  width: 300px;
+  margin: 10px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label,
+form input,
+form textarea {
+  margin: 10px 0;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #f00;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: fadeIn 2s ease-in-out;
+}
+
+form button:hover {
+  background-color: #c00;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 8px 0;
+  }
+
+  #inicio h2 {
+      font-size: 2em;
+  }
+
+  .galeria-img {
+      width: 90%;
+      max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #inicio {
+      padding: 60px 10px;
+  }
+
+  h1 {
+      font-size: 1.8em;
+  }
+
+  nav ul li a {
+      font-size: 16px;
+  }
+}
